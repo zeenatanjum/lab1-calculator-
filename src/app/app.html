@@ -1,0 +1,23 @@
+<div>
+  <table>
+    <tr>
+      <td><label for="num1">First number:</label></td>
+      <td><input id="num1" #num1 type="number"></td>
+    </tr>
+    <tr>
+      <td><label for="num2">Second number:</label></td>
+      <td><input id="num2" #num2 type="number"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button (click)="add(num1.value, num2.value)">+</button>
+        <button (click)="subtract(num1.value, num2.value)">-</button>
+        <button (click)="multiply(num1.value, num2.value)">*</button>
+      </td>
+    </tr>
+    <tr>
+      <td><label>Result:</label></td>
+      <td>{{ result }}</td>
+    </tr>
+  </table>
+</div>
